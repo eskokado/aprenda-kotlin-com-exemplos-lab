@@ -1,10 +1,30 @@
 # Aprenda Kotlin Com Exemplos: Desafio de Projeto (Lab)
 
-Desafio de Projeto criado para avaliação do conteúdo técnico explorado no repositório [aprenda-kotlin-com-exemplos](https://github.com/digitalinnovationone/aprenda-kotlin-com-exemplos). **Nesse contexto, iremos abstrair o seguinte domínio de aplicação:**
+Desafio de Projeto criado para avaliação do conteúdo técnico explorado no repositório [aprenda-kotlin-com-exemplos](https://github.com/digitalinnovationone/aprenda-kotlin-com-exemplos).
 
-**A [DIO](https://web.dio.me) possui `Formacoes` incríveis que têm como objetivo oferecer um conjunto de `ConteudosEducacionais` voltados para uma stack tecnológica específica, preparando profissionais de TI para o mercado de trabalho. `Formacoes` possuem algumas características importantes, como `nome`, `nivel` e seus respectivos `conteudosEducacionais`. Além disso, tais experiências educacionais têm um comportamento relevante ao nosso domínio, definido pela capacidade de `matricular` um ou mais `Alunos`.**
+**Domínio**
+- A [DIO](https://web.dio.me) possui `Formacoes` compostas por `ConteudosEducacionais` orientados a uma stack específica.
+- Cada formação possui `nome`, `nivel` e lista de `conteudosEducacionais` e permite `matricular` um ou mais `Alunos`.
 
+**Solução Implementada**
+- Modelos: `Nivel`, `ConteudoEducacional`, `Usuario`, `Formacao`.
+- Operações: `matricular`, `concluir` conteúdo, `pontuacaoTotal` por usuário, `ranking` por formação e `top(n)`.
+- Validações: `require` para usuário matriculado e conteúdo pertencente à formação.
 
-```kotlin
-TODO("Crie uma solução em Koltin abstraindo esse domínio. O arquivo [desafio.kt] te ajudará 😉")
-```
+**Como Executar**
+- Pré‑requisito: `kotlinc` e `java` instalados.
+- Compilar e executar:
+  - `kotlinc desafio.kt -include-runtime -d desafio.jar`
+  - `java -jar desafio.jar`
+
+**Exemplo de Saída**
+- `Ranking - Formação Kotlin Básica`
+  - `1. Ana - 220 pontos`
+  - `2. Bruno - 100 pontos`
+  - `3. Carla - 80 pontos`
+- `Ranking - Formação Kotlin Avançada`
+  - `1. Ana - 150 pontos`
+  - `2. Bruno - 120 pontos`
+- `Top 2 - Formação Kotlin Básica`
+  - `1. Ana - 220 pontos`
+  - `2. Bruno - 100 pontos`
